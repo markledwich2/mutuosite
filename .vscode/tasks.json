@@ -1,0 +1,14 @@
+{
+    "version": "0.1.0",
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "bundle",
+            "isShellCommand": true,
+            "args": ["exec", "jekyll", "serve"],
+            "showOutput": "always",
+            "isBackground": true,
+            "echoCommand": true
+        }
+    ]
+}
