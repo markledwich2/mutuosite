@@ -47,8 +47,7 @@
     opacity: 0;
 	transform: translateX(-500px);
   }
-  100% {
-  }
+  100% { }
 }
 
 @keyframes slideUp {
@@ -56,11 +55,8 @@
     opacity: 0;
 	transform: translateY(100px);
   }
-
-  100% {
-  }
+  100% {}
 }
-
 #LandingImage {
 	animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
 	animation-duration: 0.5s;
@@ -88,4 +84,9 @@
 	.content section:nth-child(even) .flex {
 		flex-direction: row-reverse;
 	}
+}
+
+section > .container > .text 
+{
+	padding-bottom: 50px;
 }
