@@ -34,34 +34,6 @@
 			&:hover svg {
 				fill: #fff;
 			}
-
-			&.twitter-icon:hover svg {
-				fill: #55acee;
-			}
-
-			&.google-plus-icon:hover svg {
-				fill: #db4437;
-			}
-
-			&.youtube-icon:hover svg {
-				fill: #cd201f;
-			}
-
-			&.instagram-icon:hover svg {
-				fill: #f167f5;
-			}
-
-			&.linkedin-icon:hover svg {
-				fill: #0077b5;
-			}
-
-			&.pinterest-icon:hover svg {
-				fill: #bd081c;
-			}
-
-			&.rss-icon:hover svg {
-				fill: #f26522;
-			}
 		}
 	}
 }
@@ -84,8 +56,7 @@ footer {
 
 	}
 	
-	&,
-	a {
+	&,	a {
 		color: #999;
 	}
 
