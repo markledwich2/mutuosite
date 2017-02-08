@@ -72,15 +72,10 @@ section > .container > .text
 .learn-more {
 	position: absolute;
 	left: 0;
-	bottom: 20px;
+	bottom: 2vh;
 	text-align: center;
-	font-size: 1em;
+	font-size: 1rem;
 	width: 100%;
-	visibility: hidden;
-
-	@media (min-height: 400px) {
-		visibility: visible;
-	}
 
 	a {
 		text-decoration: none;
@@ -99,4 +94,9 @@ section > .container > .text
 .subtext {
 	margin-top: 3vh;
 	font-size: 1.2em;
+}
+
+.cta {
+	margin: 6vh 0;
+	font-size: 1em;
 }
