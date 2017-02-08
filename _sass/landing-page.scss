@@ -76,6 +76,11 @@ section > .container > .text
 	text-align: center;
 	font-size: 1rem;
 	width: 100%;
+	visibility: hidden;
+
+	@media (min-height: 400px) {
+		visibility: visible;
+	}
 
 	a {
 		text-decoration: none;

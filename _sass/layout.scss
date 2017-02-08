@@ -21,7 +21,6 @@ header {
 	color: #fff;
 	padding: 10px;
 	position: absolute;
-	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
 
 	a {
 		color: #fff;
@@ -63,10 +62,7 @@ section + section {
 	padding-top: 0;
 }
 
-.cta {
-	margin: 6vh 0;
-	font-size: 1em;
-}
+
 
 .page h2 {
 	text-align: center;
