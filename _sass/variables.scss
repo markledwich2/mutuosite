@@ -1,8 +1,47 @@
 $brand-color: #004444;
-$secondary-brand-color: #1A646B;
+$secondary-brand-color: #129494;
 $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
 
-// Breakpoints
-$tablet: "(min-width: 450px)";
-$mid-point: "(min-width: 620px)";
-$desktop: "(min-width: 768px)";
+// breakpoint mixin
+@mixin breakpoint($mq01: 0, $mq2: false, $maxmin: min-width) {
+    @if $mq2 == false {
+        @media ($maxmin: $mq01) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $mq01) and (max-width: $mq2) {
+            @content;
+        }
+    }
+}
+
+// breakpoint variables
+$lg: 1170px;
+$md: 1024px;
+$sm: 640px;
+$xs: 480px;
+
+
+/* https://madebymike.com.au/writing/precise-control-responsive-typography/ */
+// by changing the base font size according to a calculation. We can make all other font sizes realtive 
+
+// These values are the minimum and maximum viewport sizes to apply the font scaling
+$font_min_width: 480;
+$font_max_width: 800;
+// These values represent the range of fon-tsize to apply  
+// These values effect the base font-size, headings and other elements will scale proportionally
+$min_font: 12;
+$max_font: 18; 
+
+:root { font-size: #{$min_font}px; }
+@media (min-height:#{$font_min_width}px) and (min-width: #{$font_min_width}px) and (max-width: #{$font_max_width}px){
+  :root { 
+    font-size: calc( #{$min_font}px + (#{$max_font} - #{$min_font}) * ( (100vw - #{$font_min_width}px) / ( #{$font_max_width} - #{$font_min_width}) ));
+  }
+}
+@media (min-width: #{$font_max_width}px){
+   :root { 
+     font-size: #{$max_font}px;
+   }
+}

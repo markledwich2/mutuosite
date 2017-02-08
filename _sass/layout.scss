@@ -1,7 +1,7 @@
 .container, .text-container {
 	margin: 0 auto;
 	position: relative;
-	padding: 10px;
+	padding: 2vm;
 }
 
 .text-container {
@@ -19,10 +19,8 @@
 
 header {
 	color: #fff;
-	padding: 10px 0;
+	padding: 10px;
 	position: absolute;
-	width: 100%;
-	background: $brand-color; /* Old browsers */
 	background: linear-gradient(to bottom, $brand-color 0%, $middle-gradient-color 100%) no-repeat $brand-color;
 
 	a {
@@ -37,7 +35,6 @@ header {
 	}
 
 	.company-name {
-		font-size: 1.7em;
 		line-height: 0;
 
 		a {
@@ -53,57 +50,26 @@ header {
 
 .content {
 	background: #fff;
-	padding: 10px 0 0 0;
+	color: #555;
+	padding: 2vh;
 	position: relative;
 }
 
 section {
-	padding: 100px 0;
+	padding: 10vh 1vw;
 }
 
 section + section {
 	padding-top: 0;
 }
 
-.subtext {
-	margin-top: 10px;
-	text-align: center;
-}
-
 .cta {
-	margin: 60px 0;
+	margin: 6vh 0;
+	font-size: 1em;
 }
 
 .page h2 {
 	text-align: center;
-}
-
-blockquote {
-	padding: 18px 25px;
-	margin: 0;
-	quotes: "\201C""\201D""\2018""\2019";
-	font-style: italic;
-
-	.author {
-		display: block;
-		font-weight: bold;
-		margin: 10px 0 0 0;
-		font-size: .85em;
-		font-style: normal;
-	}
-
-	p {
-		display: inline;
-	}
-}
-
-blockquote:before {
-	color: #ccc;
-	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
 }
 
 .page {
@@ -141,24 +107,3 @@ blockquote:before {
 	}
 }
 
-.learn-more {
-	position: absolute;
-	left: 0;
-	bottom: 20px;
-	text-align: center;
-	font-size: 1em;
-	width: 100%;
-
-	a {
-		text-decoration: none;
-		color: #fff;
-		opacity: .9;
-
-		&:hover {
-			opacity: 1;
-		}
-	}
-	.arrow {
-		font-size: .6em;
-	}
-}

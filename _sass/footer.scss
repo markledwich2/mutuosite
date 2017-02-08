@@ -3,18 +3,10 @@
 	margin: 10px;
 	padding: 0;
 
-	@media #{$tablet} {
-		-webkit-flex: 1 0 180px;
-		flex: 1 0 180px;
-	}
-
 	li {
 		list-style: none;
 		margin: 15px auto;
-
-		@media #{$tablet} {
-			max-width: 150px;
-		}
+		
 		a {
 
 			&:hover {
@@ -39,55 +31,16 @@
 }
 
 footer {
-	padding: 50px 0 50px 0;
-	font-size: 1.1em;
+	padding: 3vh;
+	font-size: 1.1rem;
 	position: relative;
 	background: $brand-color;
 	color: #fff;
 
 	.copyright {
-		font-size: .8em;
-		margin: 0 auto;
+		font-size: .8rem;
 		color: #fff;
-		
-		@media #{$tablet} {
-			text-align: center;
-		}
-
-	}
-	
-	&,	a {
-		color: #999;
-	}
-
-	h2 {
-		font-size: 1.4em;
-		margin: 30px 0;
-		color: #ccc;
-	}
-
-	.footer-columns {
-		@extend %flexbox;
-		@include flex-flow(wrap);
-		margin: -10px -10px 10px -10px;
-	}
-
-	a {
-		text-decoration: none;
-
-		&:hover {
-			color: #fff;
-		}
-	}
-
-	.legal-line {
-		width: 100%;
-		padding: 30px 0;
-		margin: 0;
-		background-color: #222527;
-
-		a {
-			font-weight: 600;
-		}
+		opacity: 0.5;
+		text-align: center;
 	}
 }
