@@ -5,8 +5,14 @@ author: Mark Ledwich
 featured-image: /images/2017-07-14-history/dashboard-search.png
 ---
 
-When using measurements to improve decision making in IT and Service Management, it is important to have some context to your current results. A number in isolation doesn't allow us to evaluate how you are really doing.  
-<br />
+When using measurements to improve decision making in IT and Service Management (ITSM), it is important to have some context to your current results. When comparing results over time, sometimes reports that you expect to be easy are actually extremely hard.
+
+This is because ITSM systems have been designed for efficiency of operation first and reporting second. The historical data is usually buried in audit logs, and the format you need for reporting in BI tools require complex transformation.
+
+
+## Historical Context
+
+A number in isolation doesn't allow us to evaluate how you are really doing.  
 
 Comparisons can be categorised into:
 - External - compare with other companies of a similar size/industry
@@ -23,7 +29,7 @@ A measure plotted over time it is giving you historical context. An image search
 
 Any charting tool, including ServiceNow, will let you plot a metric over time and categorise with other attributes.  However, there is a major limitation in most reporting solutions that will become clear. 
 
-## The problem of history and records that change
+## Records that change over their lifetime
 Consider the following simple charts showing the number of incidents over time:
 
 <ol style="list-style-type:lower-alpha">
@@ -36,15 +42,13 @@ Consider the following simple charts showing the number of incidents over time:
   <li>By created date</li>
 </ol>
 
-
 Based on the current data in your ITSM system, which charts do you think you would be able to plot?
 
-<br />
 *Answer*: Only d) can be shown using the current incident data!
-<br /><br />
 
-All the other charts require historical information about the incident. If any part of the metric or attribute changes during its lifetime then you will need to consider the historical values of the incident to be able to report on it. This problem is not unique to tickets, Opportunities from CRM and any other records that change over time in important ways are effected. To get your head around what the problem is, here are some examples:
-<br /><br />
+
+All the other charts require historical information about the incident. If any part of the metric or attribute changes during its lifetime then you will need to consider the historical values of the incident to be able to report on it. This problem is not unique to tickets - sales opportunities and any other records that change over time in important ways are effected. To get your head around what the problem is, here are some examples:
+
 ### By status
 
 The status of an incident changes over its lifetime. If you were to plot at the status of incidents over time according to its current state, then all of old incidents would be counted as closed (because that is what is recorded in the system as of this moment).
@@ -82,7 +86,7 @@ Another solution is to create snapshot tables with the metrics and attributes th
 
 ### 3rd Party Solutions
 
-If you are evaluating solutions, ask them if they are able to show any of the simple charts above. If you are interested in having early access to our solution, please [subscribe](http://eepurl.com/ch1esL) to our mailing list.
+If you are evaluating solutions, ask them if they are able to show any of the simple charts above. If you are interested in having early access to a solution that makes this easy, please [subscribe](http://eepurl.com/ch1esL) to our mailing list.
 
 
 
