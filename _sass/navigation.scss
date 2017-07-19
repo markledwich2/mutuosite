@@ -5,7 +5,7 @@
 		display: block;
 	}
 
-	@include breakpoint($md) {
+	@media #{$sm} {
 		border: 0;
 		padding: 0 20px;
 
@@ -20,15 +20,14 @@ nav {
 	font-size: .8em;
 	width: 100%;
 
-	@include breakpoint($md) {
+	@media #{$sm} {
 		text-align: right;
 		position: absolute;
 		top: 13px;
 		right: 0;
 		padding: 0 20px;
 	}
-
-
+	
 	a {
 		margin: 0 3px;
 		padding: 20px 10px;
@@ -37,7 +36,7 @@ nav {
 		transition: .2s ease-in-out;
 		display: none;
 
-		@include breakpoint($md) {
+		@media #{$sm} {
 			display: inline;
 			padding: 10px;
 		}
@@ -47,11 +46,11 @@ nav {
 			display: inline;
 			position: absolute;
 			right: 10px;
-			top: -22px;
+			top: -14px;
 			font-size: 1.9em;
 			border: 0;
 
-			@include breakpoint($md) {
+			@media #{$sm} {
 				display: none;
 			}
 
@@ -67,7 +66,7 @@ nav {
 		color: #fff;
 	}
 
-	@include breakpoint($md) {
+	@media #{$sm} {
 		a.highlight {
 			border: 1px #ccc solid;
 			border-radius: 5px;

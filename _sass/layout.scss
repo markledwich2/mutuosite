@@ -17,10 +17,18 @@
 	}
 }
 
+header.header-bg {
+	background-color: $brand-color;
+}
+
 header {
 	color: #fff;
+	
 	padding: 10px;
+	margin: 0px;
 	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
 
 	a {
 		color: #fff;
@@ -48,29 +56,33 @@ header {
 }
 
 .content {
-	background: #fff;
+	//background: #fff;
 	color: #555;
 	padding: 2vh;
 	position: relative;
 }
 
+.content > section {
+	padding: 5vh 1vw;
+}
+
+/*
 section {
-	padding: 10vh 1vw;
+	padding: 5vh 1vw;
 }
 
 section + section {
 	padding-top: 0;
 }
 
-
-
 .page h2 {
 	text-align: center;
-}
+}*/
 
 .page {
 	margin-bottom: 0;
 	padding-bottom: 80px;
+	padding-top:40px;
 }
 
 .center-text {

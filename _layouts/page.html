@@ -1,9 +1,10 @@
 ---
 layout: default
+header-bg: true
 ---
 <div class="content">
 	<section class="page">
-		<div class="container {% if page.full_width %}max-container{% endif %}">
+		<div class="{% if layout.text-container %}text-container{% else %}container{% endif %}">
 			{% if page.heading %}
 				<h2>{{ page.heading }}</h2>
 			{% elsif page.title and page.layout != 'archive' %}

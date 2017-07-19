@@ -1,5 +1,7 @@
 (function () {
 	$("a[href*=\\#]").on("click", function (event) {
+		if(!this.hash) return;
+
 		event.preventDefault();
 
 		$("html, body").animate({

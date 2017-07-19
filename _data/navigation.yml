@@ -1,4 +1,6 @@
-- name: Contact
-  link: /contact/
+- name: Subscribe
+  link: http://eepurl.com/ch1esL
   new_window: false
   highlight: false
+- name: Blog
+  link: /posts

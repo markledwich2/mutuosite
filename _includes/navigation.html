@@ -1,6 +1,9 @@
+
+<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/Title_White.png" alt="Mutuo Logo" height="30"/></a>
+
 <nav>
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	<a class="editor-link btn" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a>
+	
 	{% for link in site.data.navigation %}
 		{% assign class = "" %}
 		{% if link.highlight %}
@@ -13,3 +16,4 @@
 		<a href="{% include relative-src.html src=link.link %}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a>
 	{% endfor %}
 </nav>
+

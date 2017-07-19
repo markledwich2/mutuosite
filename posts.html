@@ -1,0 +1,21 @@
+---
+title: Mutuo Blog
+image_view: false
+layout: page
+---
+<section style="display:flex">
+
+{% for post in site.posts %}
+<div>
+
+    <a href="{{ post.url }}">
+        <img src="{{ post.featured-image }}" alt="{{ post.title }}" />
+        {{ post.title }}
+    </a>
+
+    <p class="subtle">{{post.author}} - {{ post.date | date_to_string }}</p>
+</div>
+{% endfor %}
+</section>
+
+

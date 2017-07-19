@@ -2,26 +2,11 @@ $brand-color: #004444;
 $secondary-brand-color: #129494;
 $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
 
-// breakpoint mixin
-@mixin breakpoint($mq01: 0, $mq2: false, $maxmin: min-width) {
-    @if $mq2 == false {
-        @media ($maxmin: $mq01) {
-            @content;
-        }
-    }
-    @else {
-        @media (min-width: $mq01) and (max-width: $mq2) {
-            @content;
-        }
-    }
-}
-
 // breakpoint variables
-$lg: 1170px;
-$md: 1024px;
-$sm: 640px;
-$xs: 480px;
-
+$lg: "(min-width: 1170px)";
+$md: "(min-width: 1024px)";
+$sm: "(min-width: 640px)";
+$xs: "(min-width: 480px)";
 
 /* https://madebymike.com.au/writing/precise-control-responsive-typography/ */
 // by changing the base font size according to a calculation. We can make all other font sizes realtive 
