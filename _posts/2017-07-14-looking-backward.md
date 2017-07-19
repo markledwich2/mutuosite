@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Looking backward
-author: Mark Ledwich
+author:
+  - name
 featured-image: /images/2017-07-14-history/dashboard-search.png
 ---
 
