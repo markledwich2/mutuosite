@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why your historical metrics are probably wrong: Records that change, and how to report on them
+title: "Why your historical metrics are probably wrong: Records that change, and how to report on them"
 author: Mark Ledwich
 featured-image: /images/2017-07-14-history/dashboard-search.png
 ---
