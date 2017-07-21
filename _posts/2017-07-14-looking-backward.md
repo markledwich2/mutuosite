@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Looking backward
+title: Why your historical metrics are probably wrong: Records that change, and how to report on them
 author: Mark Ledwich
 featured-image: /images/2017-07-14-history/dashboard-search.png
 ---
@@ -35,7 +35,6 @@ Consider the following simple charts showing the number of incidents over time:
 Based on the current data in your ITSM system, which charts do you think you would be able to plot?
 
 *Answer*: Only d) can be shown using the current incident data!
-
 
 All the other charts require historical information about the incident. If any incident metric or attribute changes during its lifetime then you will need to consider the historical values of the incident to be able to report on it. This problem is not unique to tickets, sales opportunities and any other records that change over time in important ways are affected. To get your head around what the problem is, here are some examples:
 
