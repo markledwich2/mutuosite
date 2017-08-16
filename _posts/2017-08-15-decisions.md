@@ -2,7 +2,7 @@
 layout: post
 title: "The Science on Decisions: A must-have app for your necktop"
 author: Mark Ledwich
-featured-image: /images/decisions/monkey.png
+featured-image: /images/decisions/monkey.jpg
 ---
 If you are an alien, you might not be aware that IT and Service Management (ITSM) is experiencing disruptive change. The cloud, software as a service, automation and decentralization are creating some fundamental changes to what IT does and the way work is done.
 
@@ -243,7 +243,7 @@ An example of a chaotic system in ITSM would be if a floor of the office with se
 
 It is appropriate to use a combination of intuition, heuristics and rules. It is also iterative; the important aspects of the situation must be continually assessed.
 
-[M Omodei](https://www.researchgate.net/profile/Mary_Omodei), experienced in the study of decision making in firefighting with many published papers on this topic, generously provided feedback and the following diagram. It shows us the common &quot;error traps&quot; we are likely to make in complex, chaotic situations.
+[M Omodei](https://www.researchgate.net/profile/Mary_Omodei) (who has many published papers on decision making in fireifghting) generously provided the following diagram. It shows us the common &quot;error traps&quot; we are likely to make in complex, chaotic situations.
 
 <img class="img" src="/images/decisions/error-traps.png" data-action="zoom"  />
 
