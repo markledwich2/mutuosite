@@ -3,14 +3,13 @@ title: Mutuo Blog
 image_view: false
 layout: page
 ---
-<section style="display:flex">
+<section>
 
 {% for post in site.posts %}
-<div>
-
+<div style="max-width:600px;padding-top:50px">
     <a href="{{ post.url }}">
-        <img src="{{ post.featured-image }}" alt="{{ post.title }}" />
-        {{ post.title }}
+        <img src="{{ post.featured-image }}" alt="{{ post.title }}" style="width:100%"  />        
+        <b style="font-size:1.2em">{{ post.title }}</b>
     </a>
 
     <p class="subtle">{{post.author}} - {{ post.date | date_to_string }}</p>

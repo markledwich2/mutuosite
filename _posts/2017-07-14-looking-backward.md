@@ -61,10 +61,10 @@ If you consider assigned to be the last person assigned, then this chart can use
 ServiceNow solves some of these problems with [metric definitions](https://docs.servicenow.com/bundle/geneva-performance-analytics-and-reporting/page/use/advanced_reporting/task/t_CreateAMetricDefinition.html) that are calculated based on triggers (e.g. when an incident changes state) and  stored historically as metric instances. Out of the box, there are some common metric definitions for the duration of incidents (e.g. duration in each incident state). The limitations with metric definitions is that you must:
 - Know how to write scripts, and ensure the trigger occurs at any time the metric might change.
 - Pro-actively create metrics. They are not calculated retrospectively.
-- Report inside service now. Metric instances are not stored in a format that is easy to report on using standard BI tools.
+- Report inside service now. Metric instances are not stored in a format that is easy to report on using standard business intelligence tools.
 
 ### Snapshot Tables
-Another solution is to create snapshot tables with the metrics and attributes that you wish to report on historically. This avoids the limitations with metric definitions and allows you to use standard BI tools (e.g. Tableau or PowerBI). The difficulty with this approach is the expertise required to implement a snapshot table from the ServiceNow audit and incident tables. This can be done either by:
+Another solution is to create snapshot tables with the metrics and attributes that you wish to report on historically. This avoids the limitations with metric definitions and allows you to use standard business intelligence tools (e.g. Excel, Tableau or PowerBI). The difficulty with this approach is the expertise required to implement a snapshot table from the ServiceNow audit and incident tables. This can be done either by:
 - Creating scripts in ServiceNow that maintain the snapshot table.
 - Using data integration tools that can read from the ServiceNow API.
 
